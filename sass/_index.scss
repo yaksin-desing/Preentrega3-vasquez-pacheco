@@ -1,0 +1,213 @@
+
+/* ################ */
+/* INICIO Transiciones */
+/* ################ */
+.loader {
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    .page-transition {
+        position: absolute;
+        bottom: 0;
+        background-image: url(../assets/img/fondo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    
+    }
+    
+    .pages-transition {
+        position: absolute;
+        bottom: 0;
+        background-image: url(../assets/img/fondos.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+}
+/* ################ */
+/*  FIN Transiciones */
+/* ################ */
+
+/* #####################   HOME ############################# */
+.index__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 5em;
+    margin-right: 5em;
+    justify-content: center;
+    .estrellasderecha{
+        position: absolute;
+        top: 5em;
+        right: 5em;
+        z-index: 0;
+    }
+    .estrellasisquierda{
+        position: absolute;
+        bottom: 5em;
+        left: 8em;
+        z-index: 0;
+    }
+    
+    .home__titulo {
+        margin-left: 1em;
+        margin-right: 1em;
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 136%;
+        text-align: center;
+        color: #000000;
+        .imgh1 {
+
+            border-radius: 100px;
+            animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-name: imgtex;
+        }
+        @keyframes imgtex {
+            from {
+                width: 10%;
+            }
+        
+            to {
+                width: 24.5%;
+            }   
+        }
+    }
+    .home__subtitulo{
+        margin-right: 10em;
+        margin-left: 10em;
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 138.5%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+}
+.float {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #000000;
+    .botonfloat {
+        position: absolute;
+        z-index: 1;
+        margin-top: 30px;
+        margin-left: 30px;
+        &:hover {
+            transition: transform 1s;
+            transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
+            transform: rotate(90deg)scale(1.5);
+        }
+    }
+    .backfloat {
+        border-radius: 100%;
+        animation-name: backfloat;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes backfloat {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.home__contenedorcintas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    .contcinta1 {
+        position: absolute;
+        bottom: 5em;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        transform: rotate(7deg);
+        z-index: -2;
+        background: $colorn;
+        .cintahome1 {
+            width: 1600px;
+            height: 30px;
+            background-image: url("../assets/img/cintahome1.png");
+            background-size: 100% 100%;
+            animation: slider 30s infinite linear;
+            background-repeat: repeat;
+        }     
+        @keyframes slider {
+            to {
+                background-position: 1600px;
+            }
+        }
+    }
+    .contcinta2 {
+        position: absolute;
+        bottom: 4em;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        transform: rotate(-9deg);
+        z-index: -2;
+        background: $colora;
+        .cintahome2 {
+            width: 1600px;
+            height: 30px;
+            background-image: url("../assets/img/cintahome2.png");
+            background-size: 100% 100%;
+            animation: 30s infinite linear;
+            background-repeat: repeat;
+            animation-name: slider2;
+        }
+        @keyframes slider2 {
+            to {
+                background-position: 1600px;
+            }
+        }
+    }
+    
+}
+/* ################# CURSOR ##############333 */
+.grow,
+.grow-small {
+    transform: scale(10);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+.grow-small {
+    transform: scale(2.5);
+    border: none;
+}
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 0.5px solid #9b9b9b;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}

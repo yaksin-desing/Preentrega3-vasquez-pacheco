@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/sass.css">
+    <!-- barbajs and gsap  -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <title>Portafolio2</title>
+</head>
+
+<body data-barba="wrapper">
+
+    <div class="loader">
+        <div class="page-transition"></div>
+        <div class="pages-transition"></div>
+    </div>
+    <div class="cursor"></div>
+    <main data-barba="container" data-barba-namespace="inicio">
+        <header>
+            <nav>
+                <div>
+                    <a href="index.html">
+                        <lottie-player id="logo" src="../assets/img/logoanimado.json" speed="1" style="width:100px;"
+                            autoplay>
+                        </lottie-player>
+                    </a>
+                </div>
+                <div style="justify-content: center; display: flex; align-items: center;">
+                    <a class="menu" href="#"><img src="../assets/img/menu.png" alt="menu"></a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- inicio home -->
+        <section class="home__inicio">
+            <div class="home__inicio__conten1">
+                <h1 class="inicio__titulo">
+                    Hola! soy el <strong class="palabra1"> diseñador </strong> que necesitas
+                </h1>
+                <p class="inicio__subtitulo">
+                    ” Transformo los problemas de tus productos en hermosas soluciones creativas ”
+                </p>
+                <div class="home__botones">
+                    <div class="home__boton cursor-scale small">
+                        <a href="index.html">Contactame</a>
+                        <img src="../assets/img/flechaboton.svg" alt="flecha">
+                    </div>
+                </div>
+                <div class="home__gridcontadores">
+                    <div class="contproyectos">
+                        <h2 class="cont1">+ 18</h2>
+                        <P class="cont2">Proyectos</P>
+                    </div>
+                    <div class="contproyectos">
+                        <h2 class="cont1">+ 3</h2>
+                        <P class="cont2">Años de exp</P>
+                    </div>
+                </div>
+            </div>
+            <div class="inicio__img">
+                <img  src="assets\img\fotoinicio.svg" alt="">
+            </div>
+        </section>
+        <div class="inicio__contenedorcintas">
+            <div class="cintainicio1">
+            </div>
+        </div>
+        <div class="home__pie">
+            <div>
+                <p>Yaksinvasquez@gmail.com | +57 321 5841003</p>
+            </div>
+            <div>
+                <p>© 2023 Dsain</p>
+            </div>
+        </div>
+        
+    </main>
+    <!-- javascripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

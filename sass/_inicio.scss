@@ -1,0 +1,170 @@
+.home__inicio {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-left: 5em;
+    margin-right: 5em;
+    gap: 8em;
+    .home__inicio__conten1{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        .inicio__titulo{
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 136%;
+            color: #000000;
+            .palabra1 {
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 8px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #5bffad;
+                    transform: scale(0);  
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+        .inicio__subtitulo {
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 138.5%;
+            text-align: start;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+        .home__botones {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 5px;
+            cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+            .home__boton {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0px;
+                gap: 10px;
+                width: 198px;
+                height: 43px;
+                background: #000000;
+                border: 1px solid #000000;
+                border-radius: 77px;
+                display: flex;
+                cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+                &:hover {
+                background: #000000;
+                color: #ffffff;
+                border: 1px solid #ffffff;
+                transform: scale(1.1);
+                width: 220px;
+                gap: 50px;
+                }
+                a{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: #FFFFFF;
+                cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+                }
+                img{
+                    width: "";
+                }
+            }
+        }
+        .home__gridcontadores {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            padding-top: 2em;
+            gap: 30px;
+            .contproyectos {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding: 0px 0px;
+                gap: 1px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 1em;
+                .cont1 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #000000;
+                    text-align: center;
+                }
+                
+                .cont2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .inicio__img{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+    }
+
+}
+.inicio__contenedorcintas {
+    display:flex;
+    height: 200px;
+    overflow: hidden;
+    .cintainicio1 {
+
+        height: 200px;
+        width: 9000px;
+        background-image: url("../assets/img/cintainicio.png");
+        background-size: 8162px 216px;
+        animation: 100s infinite linear;
+        background-repeat: repeat;
+        animation-name: cintainicio;
+        @keyframes cintainicio {
+            to {
+                background-position: -8162px;
+            }
+        }
+    }
+}
+
+
+
+.home__pie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: light;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 136%;
+    color: #3f3f3f;
+    margin-bottom: 1em;
+}
