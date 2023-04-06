@@ -188,7 +188,106 @@
     }
     
 }
-/* ################# CURSOR ##############333 */
+/* ################# RESPONSIVE ############## */
+@media (max-width: 450px) {
+    nav {
+        display: flex;
+        margin-top: 2em;
+        margin-bottom: 0em;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+        #logo {
+            transform: scale(0.9);
+        }
+        .menu{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            transform: scale(0.9);
+        }
+    }
+
+    .index__home {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        gap: 2em;
+        .estrellasderecha{
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            z-index: 0;
+            transform: scale(0.5);
+        }
+        .estrellasisquierda{
+            position: absolute;
+            bottom: 17em;
+            left: 2em;
+            z-index: 0;
+            transform: scale(0.6);
+        }
+        
+        .home__titulo {
+            margin-left: 1em;
+            margin-right: 1em;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            text-align:center;
+            color: #000000;
+            .imgflecha{
+                display: none;
+                transform: scale(0.9);
+            }
+            .miniperfil{
+
+                transform: scale(0.9);
+            }
+            .imgh1 {
+                display: none;
+                border-radius: 100px;
+                animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                animation-name: null;
+                transform: scale(0.5);
+            }
+            @keyframes imgtex {
+                from {
+                    width: 10%;
+                }
+            
+                to {
+                    width: 24.5%;
+                }   
+            }
+        }
+        .home__subtitulo{
+            margin-right: 1em;
+            margin-left: 1em;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 138.5%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+    }
+
+    
+}
+
+
+
+
+
+/* ################# CURSOR ############## */
 .grow,
 .grow-small {
     transform: scale(10);
