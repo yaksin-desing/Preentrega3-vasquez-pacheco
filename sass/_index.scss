@@ -51,12 +51,14 @@
         top: 5em;
         right: 5em;
         z-index: 0;
+        transform: scale(0.8);
     }
     .estrellasisquierda{
         position: absolute;
         bottom: 5em;
         left: 8em;
         z-index: 0;
+        transform: scale(0.9);
     }
     
     .home__titulo {
@@ -91,7 +93,7 @@
         font-family: 'Sora';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 138.5%;
         text-align: center;
         letter-spacing: 0.05em;
@@ -143,7 +145,7 @@
         height: auto;
         width: 100%;
         overflow: hidden;
-        transform: rotate(7deg);
+        transform: rotate(4deg);
         z-index: -2;
         background: $colorn;
         .cintahome1 {
@@ -166,7 +168,7 @@
         height: auto;
         width: 100%;
         overflow: hidden;
-        transform: rotate(-9deg);
+        transform: rotate(-5deg);
         z-index: -2;
         background: $colora;
         .cintahome2 {

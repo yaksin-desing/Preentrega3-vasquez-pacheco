@@ -50,12 +50,14 @@
   top: 5em;
   right: 5em;
   z-index: 0;
+  transform: scale(0.8);
 }
 .index__home .estrellasisquierda {
   position: absolute;
   bottom: 5em;
   left: 8em;
   z-index: 0;
+  transform: scale(0.9);
 }
 .index__home .home__titulo {
   margin-left: 1em;
@@ -87,7 +89,7 @@
   font-family: "Sora";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 138.5%;
   text-align: center;
   letter-spacing: 0.05em;
@@ -140,7 +142,7 @@
   height: auto;
   width: 100%;
   overflow: hidden;
-  transform: rotate(7deg);
+  transform: rotate(4deg);
   z-index: -2;
   background: #F24E1E;
 }
@@ -163,7 +165,7 @@
   height: auto;
   width: 100%;
   overflow: hidden;
-  transform: rotate(-9deg);
+  transform: rotate(-5deg);
   z-index: -2;
   background: #FDBD39;
 }
