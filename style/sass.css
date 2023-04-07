@@ -195,6 +195,302 @@ nav .menu {
   }
 }
 
+.inicio__cont__misservicios {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.inicio__cont__misservicios .misservicios__titulo {
+  display: flex;
+  flex-direction: row;
+}
+.inicio__cont__misservicios .misservicios__titulo .misservicios__cont__1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 20%;
+}
+.inicio__cont__misservicios .misservicios__titulo .misservicios__cont__1 img {
+  transform: scale();
+}
+.inicio__cont__misservicios .misservicios__titulo .misservicios__cont__1 p {
+  font-style: normal;
+  width: 230px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 136%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: "Sora";
+}
+.inicio__cont__misservicios .misservicios__titulo .misservicios__cont__2 {
+  display: flex;
+}
+.inicio__cont__misservicios .misservicios__titulo .misservicios__cont__2 h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 136%;
+  color: #000000;
+  font-family: "Sora";
+}
+.inicio__cont__misservicios .misservicios__items {
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+.inicio__cont__misservicios .misservicios__items .item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 23px;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #A6A6A6;
+  border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .conten__text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .conten__text h5 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .conten__text p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .cont__boton {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px;
+  gap: 20px;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .cont__boton .boton {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  gap: 10px;
+  width: 120px;
+  height: 30px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 77px;
+  display: flex;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .cont__boton .boton a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 23px;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #A6A6A6;
+  border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .conten__text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .conten__text h5 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .conten__text p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .cont__boton {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px;
+  gap: 20px;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .cont__boton .boton {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  gap: 10px;
+  width: 120px;
+  height: 30px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 77px;
+  display: flex;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .cont__boton .boton a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 23px;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #A6A6A6;
+  border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .conten__text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .conten__text h5 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .conten__text p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .cont__boton {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px;
+  gap: 20px;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .cont__boton .boton {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  gap: 10px;
+  width: 120px;
+  height: 30px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 77px;
+  display: flex;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .cont__boton .boton a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 23px;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #A6A6A6;
+  border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .conten__text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .conten__text h5 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .conten__text p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 136%;
+  color: #000000;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .cont__boton {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px;
+  gap: 20px;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .cont__boton .boton {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  gap: 10px;
+  width: 120px;
+  height: 30px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 77px;
+  display: flex;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .cont__boton .boton a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
 .home__pie {
   display: flex;
   justify-content: space-between;
