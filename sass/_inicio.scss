@@ -454,7 +454,161 @@
     }
 }
 
+.hacer1 {
+    gap: 20px;
+    padding-bottom: 5em;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background: #ffffff;
+    .misservicios__titulo{
+        display: flex;
+            flex-direction: row;
+        
+        .misservicios__cont__1{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            height: 20%;
+            
+            img{
+                transform: scale();
+            }
+            p{
+                font-style: normal;
+                width: 230px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 136%;
+                display: flex;
+                align-items: center;
+                color: #000000;
+                font-family: 'Sora';
+            }
+        }
+        .misservicios__cont__2{
+            display: flex;
+            h3{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 136%;
+                color: #000000;
+                font-family: 'Sora';
+            }
+        }
+    }
+    div{
+        a{
+            .cabetitulo1 {
+                display: grid;
+                grid-template-columns: 30% 30% 39%;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 5px;
+                padding: 1em;
+                .botonflacha1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 20px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #585858;
+                    border-radius: 100px;
+                }
+            }
+            .cabe1{
+                .tituloitem {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+                .subtituloitem1 {
+                    display: none;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+                .subtituloitem2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+            .cabe2{
+                .tituloitem {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+                .subtituloitem1 {
+                    display: none;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+                .subtituloitem2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
 
+.item1,
+.item2,
+.item3,
+.item4 {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff00;
+    border: 0.1px solid #a1a1a1;
+    border-radius: 5px;
+
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover {
+    filter: invert(100%);
+    background: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border: 0.5px solid #000000;
+    bottom: 10px;
+    cursor: url("../assets/img/cursor.svg") 12 12, auto;
+}
+//########### pie de pagina ###########//
 .home__pie {
     display: flex;
     justify-content: space-between;

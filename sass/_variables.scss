@@ -15,7 +15,7 @@ a {
 
 body {
     background: #ffffff;
-    cursor: url("../assets/img/cursor.svg") 12 12, auto;
+    cursor: url("../assets/img/cursor.svg") 12 12,auto;
 }
 
 body::-webkit-scrollbar {
@@ -43,3 +43,30 @@ nav {
         align-items: center;
     }
 }
+.float__wapp {
+    display: flex;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+    .botonfloat__wapp {
+        margin-top: 6px;
+        margin-left: 6px;
+        position: absolute;
+        z-index: 1;
+    }
+    .backfloat__wapp {
+        position: absolute;
+        z-index: 0;
+        animation-name: backfloat;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+
+
+

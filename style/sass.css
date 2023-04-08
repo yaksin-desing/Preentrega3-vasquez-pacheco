@@ -41,6 +41,30 @@ nav .menu {
   align-items: center;
 }
 
+.float__wapp {
+  display: flex;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+}
+.float__wapp .botonfloat__wapp {
+  margin-top: 6px;
+  margin-left: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.float__wapp .backfloat__wapp {
+  position: absolute;
+  z-index: 0;
+  animation-name: backfloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .home__inicio {
   display: flex;
   flex-direction: row;
@@ -489,6 +513,150 @@ nav .menu {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+
+.hacer1 {
+  gap: 20px;
+  padding-bottom: 5em;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  background: #ffffff;
+}
+.hacer1 .misservicios__titulo {
+  display: flex;
+  flex-direction: row;
+}
+.hacer1 .misservicios__titulo .misservicios__cont__1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 20%;
+}
+.hacer1 .misservicios__titulo .misservicios__cont__1 img {
+  transform: scale();
+}
+.hacer1 .misservicios__titulo .misservicios__cont__1 p {
+  font-style: normal;
+  width: 230px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 136%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: "Sora";
+}
+.hacer1 .misservicios__titulo .misservicios__cont__2 {
+  display: flex;
+}
+.hacer1 .misservicios__titulo .misservicios__cont__2 h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 136%;
+  color: #000000;
+  font-family: "Sora";
+}
+.hacer1 div a .cabetitulo1 {
+  display: grid;
+  grid-template-columns: 30% 30% 39%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1em;
+}
+.hacer1 div a .cabetitulo1 .botonflacha1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #585858;
+  border-radius: 100px;
+}
+.hacer1 div a .cabe1 .tituloitem {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.hacer1 div a .cabe1 .subtituloitem1 {
+  display: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.hacer1 div a .cabe1 .subtituloitem2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.hacer1 div a .cabe2 .tituloitem {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.hacer1 div a .cabe2 .subtituloitem1 {
+  display: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.hacer1 div a .cabe2 .subtituloitem2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  border: 0.1px solid #a1a1a1;
+  border-radius: 5px;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover {
+  filter: invert(100%);
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border: 0.5px solid #000000;
+  bottom: 10px;
+  cursor: url("../assets/img/cursor.svg") 12 12, auto;
 }
 
 .home__pie {
