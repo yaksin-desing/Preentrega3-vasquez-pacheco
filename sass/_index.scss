@@ -1,4 +1,7 @@
-
+.body__index{
+    height: 100vh;
+    
+}
 /* ################ */
 /* INICIO Transiciones */
 /* ################ */
@@ -42,7 +45,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    margin-top: 4em;
     margin-left: 5em;
     margin-right: 5em;
     justify-content: center;
@@ -55,7 +58,7 @@
     }
     .estrellasisquierda{
         position: absolute;
-        bottom: 5em;
+        bottom: 8em;
         left: 8em;
         z-index: 0;
         transform: scale(0.9);
@@ -137,8 +140,8 @@
 .home__contenedorcintas {
     position: absolute;
     width: 100%;
-    height: 100%;
     z-index: -5;
+    bottom: 1px;
     .contcinta1 {
         position: absolute;
         bottom: 5em;
@@ -190,6 +193,9 @@
 }
 /* ################# RESPONSIVE ############## */
 @media (max-width: 450px) {
+    .cursor{
+        display: none;
+    }
     nav {
         display: flex;
         margin-top: 2em;
@@ -212,21 +218,20 @@
         display: flex;
         justify-content: start;
         flex-direction: column;
-        height: 100vh;
-        margin-top: 2em;
+        margin-top: 5em;
         margin-left: 1em;
         margin-right: 1em;
         gap: 2em;
         .estrellasderecha{
             position: absolute;
-            top: 1px;
+            top: 2em;
             right: 1px;
             z-index: 0;
             transform: scale(0.5);
         }
         .estrellasisquierda{
             position: absolute;
-            bottom: 17em;
+            top: 10em;
             left: 2em;
             z-index: 0;
             transform: scale(0.6);
@@ -279,32 +284,6 @@
             color: #000000;
         }
     }
-
-    
 }
 
-/* ################# CURSOR ############## */
-.grow,
-.grow-small {
-    transform: scale(10);
-    background: #fff;
-    mix-blend-mode: difference;
-    border: none;
-}
-.grow-small {
-    transform: scale(2.5);
-    border: none;
-}
-.cursor {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    margin-left: -20px;
-    margin-top: -20px;
-    border-radius: 50%;
-    border: 0.5px solid #9b9b9b;
-    transition: transform .3s ease;
-    transform-origin: center center;
-    pointer-events: none;
-    z-index: 1000;
-}
+

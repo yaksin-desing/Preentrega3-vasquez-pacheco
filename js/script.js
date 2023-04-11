@@ -1,21 +1,3 @@
-
-LottieInteractivity.create({
-    mode:"chain",
-    player: "#logo",
-    actions: [
-        {
-            state: 'autoplay',
-            transition: 'onComplete',
-            frames: [1, 148],
-
-        },
-        {
-            type: 'hover',
-            frames: [147],
-        }
-    ]
-});
-
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
@@ -23,7 +5,6 @@ var cursor = document.querySelector('.cursor'),
 
 gsap.to({}, 0.050, {
     repeat: -1,
-
     onRepeat: function () {
         gsap.set(cursor, {
             css: {
@@ -52,6 +33,24 @@ cursorScale.forEach(link => {
         }
     });
 });
+LottieInteractivity.create({
+    mode:"chain",
+    player: "#logo",
+    actions: [
+        {
+            state: 'autoplay',
+            transition: 'onComplete',
+            frames: [1, 148],
+
+        },
+        {
+            type: 'hover',
+            frames: [147],
+        }
+    ]
+});
+
+
 
 
 pageTransition = () => {
