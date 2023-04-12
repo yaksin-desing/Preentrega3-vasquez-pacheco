@@ -729,7 +729,7 @@ nav .menu {
   align-items: center;
   padding: 5px 25px;
   gap: 10px;
-  width: 120px;
+  width: 100%;
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
@@ -792,11 +792,11 @@ nav .menu {
   align-items: center;
   padding: 5px 25px;
   gap: 10px;
-  width: 120px;
+  width: 100%;
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 20px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -855,7 +855,7 @@ nav .menu {
   align-items: center;
   padding: 5px 25px;
   gap: 10px;
-  width: 120px;
+  width: 100%;
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
@@ -918,7 +918,7 @@ nav .menu {
   align-items: center;
   padding: 5px 25px;
   gap: 10px;
-  width: 120px;
+  width: 100%;
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
@@ -982,7 +982,7 @@ nav .menu {
   color: #000000;
   font-family: "Sora";
 }
-.hacer1 div a .cabetitulo1 {
+.hacer1 div .cabetitulo1 {
   display: grid;
   grid-template-columns: 30% 30% 39%;
   justify-content: space-between;
@@ -990,7 +990,7 @@ nav .menu {
   border-radius: 5px;
   padding: 1em;
 }
-.hacer1 div a .cabetitulo1 .botonflacha1 {
+.hacer1 div .cabetitulo1 .botonflacha1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1000,7 +1000,7 @@ nav .menu {
   border: 1px solid #585858;
   border-radius: 100px;
 }
-.hacer1 div a .cabe1 .tituloitem {
+.hacer1 div .cabe1 .tituloitem {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
@@ -1010,7 +1010,7 @@ nav .menu {
   align-items: center;
   color: #000000;
 }
-.hacer1 div a .cabe1 .subtituloitem1 {
+.hacer1 div .cabe1 .subtituloitem1 {
   display: none;
   font-family: "Poppins";
   font-style: normal;
@@ -1019,7 +1019,7 @@ nav .menu {
   line-height: 22px;
   color: #000000;
 }
-.hacer1 div a .cabe1 .subtituloitem2 {
+.hacer1 div .cabe1 .subtituloitem2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
@@ -1027,7 +1027,7 @@ nav .menu {
   line-height: 22px;
   color: #000000;
 }
-.hacer1 div a .cabe2 .tituloitem {
+.hacer1 div .cabe2 .tituloitem {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
@@ -1037,7 +1037,7 @@ nav .menu {
   align-items: center;
   color: #000000;
 }
-.hacer1 div a .cabe2 .subtituloitem1 {
+.hacer1 div .cabe2 .subtituloitem1 {
   display: none;
   font-family: "Poppins";
   font-style: normal;
@@ -1046,7 +1046,7 @@ nav .menu {
   line-height: 22px;
   color: #000000;
 }
-.hacer1 div a .cabe2 .subtituloitem2 {
+.hacer1 div .cabe2 .subtituloitem2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;

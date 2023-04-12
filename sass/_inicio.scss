@@ -244,7 +244,7 @@
                     align-items: center;
                     padding: 5px 25px;
                     gap: 10px;
-                    width: 120px;
+                    width: 100%;
                     height: 30px;
                     background: #000000;
                     border: 1px solid #000000;
@@ -310,11 +310,11 @@
                     align-items: center;
                     padding: 5px 25px;
                     gap: 10px;
-                    width: 120px;
+                    width: 100%;
                     height: 30px;
                     background: #000000;
                     border: 1px solid #000000;
-                    border-radius: 77px;
+                    border-radius: 20px;
                     display: flex;
                     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
                     p{
@@ -373,7 +373,7 @@
                     align-items: center;
                     padding: 5px 25px;
                     gap: 10px;
-                    width: 120px;
+                    width: 100%;
                     height: 30px;
                     background: #000000;
                     border: 1px solid #000000;
@@ -436,7 +436,7 @@
                     align-items: center;
                     padding: 5px 25px;
                     gap: 10px;
-                    width: 120px;
+                    width: 100%;
                     height: 30px;
                     background: #000000;
                     border: 1px solid #000000;
@@ -506,7 +506,7 @@
         }
     }
     div{
-        a{
+        
             .cabetitulo1 {
                 display: grid;
                 grid-template-columns: 30% 30% 39%;
@@ -583,7 +583,7 @@
                     color: #000000;
                 }
             }
-        }
+        
     }
 }
 
