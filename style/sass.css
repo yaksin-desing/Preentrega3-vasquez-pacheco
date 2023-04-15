@@ -17,10 +17,12 @@ body {
 
 body::-webkit-scrollbar {
   width: 5px;
+  background: rgba(0, 0, 0, 0);
 }
 
 body::-webkit-scrollbar-thumb {
   background: #000000;
+  width: 10px;
   border-radius: 19px;
 }
 
@@ -73,11 +75,9 @@ nav .menu {
   padding: 0px;
   gap: 20px;
   margin-top: 3em;
-  margin-left: 5em;
-  margin-right: 5em;
   height: 330px;
   background: #000000;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0px;
 }
 .pie .imgenlogo__pie {
   filter: invert(100%);
@@ -129,11 +129,9 @@ nav .menu {
     padding: 0px;
     gap: 20px;
     margin-top: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
     height: 330px;
     background: #000000;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px;
   }
   .pie .imgenlogo__pie {
     filter: invert(100%);
@@ -184,11 +182,9 @@ nav .menu {
     padding: 0px;
     gap: 20px;
     margin-top: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
     height: 330px;
     background: #000000;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px;
   }
   .pie .imgenlogo__pie {
     filter: invert(100%);
@@ -239,11 +235,9 @@ nav .menu {
     padding: 0px;
     gap: 20px;
     margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
     height: 330px;
     background: #000000;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px;
   }
   .pie .imgenlogo__pie {
     filter: invert(100%);
@@ -1301,7 +1295,7 @@ nav .menu {
   height: 43px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1486,7 +1480,7 @@ nav .menu {
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1549,7 +1543,7 @@ nav .menu {
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1612,7 +1606,7 @@ nav .menu {
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1675,7 +1669,7 @@ nav .menu {
   height: 30px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1869,7 +1863,7 @@ nav .menu {
   height: 43px;
   background: #000000;
   border: 1px solid #000000;
-  border-radius: 77px;
+  border-radius: 10px;
   display: flex;
   cursor: url("../assets/img/flecha1.svg") 10 12, auto;
 }
@@ -1967,7 +1961,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2157,7 +2151,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2220,7 +2214,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2283,7 +2277,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2346,7 +2340,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2517,7 +2511,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2526,7 +2520,7 @@ nav .menu {
     color: #ffffff;
     border: 1px solid #ffffff;
     transform: scale(1.1);
-    width: 220px;
+    width: 100%;
     gap: 50px;
   }
   .banner__inicio .home__botones .home__boton a {
@@ -2614,7 +2608,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2804,7 +2798,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2867,7 +2861,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2930,7 +2924,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -2993,7 +2987,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3164,7 +3158,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3173,7 +3167,7 @@ nav .menu {
     color: #ffffff;
     border: 1px solid #ffffff;
     transform: scale(1.1);
-    width: 220px;
+    width: 100%;
     gap: 50px;
   }
   .banner__inicio .home__botones .home__boton a {
@@ -3261,7 +3255,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3451,7 +3445,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3514,7 +3508,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3577,7 +3571,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3640,7 +3634,7 @@ nav .menu {
     height: 40px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3811,7 +3805,7 @@ nav .menu {
     height: 43px;
     background: #000000;
     border: 1px solid #000000;
-    border-radius: 77px;
+    border-radius: 10px;
     display: flex;
     cursor: url("../assets/img/flecha1.svg") 10 12, auto;
   }
@@ -3820,7 +3814,7 @@ nav .menu {
     color: #ffffff;
     border: 1px solid #ffffff;
     transform: scale(1.1);
-    width: 220px;
+    width: 100%;
     gap: 50px;
   }
   .banner__inicio .home__botones .home__boton a {
