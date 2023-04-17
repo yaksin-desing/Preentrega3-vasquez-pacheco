@@ -7,6 +7,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+
     .proyectos {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@
         background: #ffffff;
         border: 0.5px solid #A6A6A6;
         border-radius: 5px;
-    
+
         .proyectos__img {
             width: 100%;
             left: 10px;
@@ -26,7 +27,7 @@
             background: #ececec;
             border-radius: 10px;
         }
-    
+
         .cont__titulo__proyectos {
             display: flex;
             flex-direction: row;
@@ -34,7 +35,7 @@
             align-items: center;
             padding: 0px;
             gap: 30px;
-    
+
             h2 {
                 font-family: 'Sora';
                 font-style: normal;
@@ -43,11 +44,11 @@
                 line-height: 136%;
                 color: #000000;
             }
-    
+
             .contador__group {
                 display: flex;
                 flex-direction: row;
-    
+
                 p {
                     font-family: 'Sora';
                     font-style: normal;
@@ -58,11 +59,11 @@
                     align-items: center;
                 }
             }
-    
+
             .fecha__proyecto {
                 display: flex;
                 flex-direction: row;
-    
+
                 p {
                     font-family: 'Sora';
                     font-style: normal;
@@ -74,7 +75,7 @@
                 }
             }
         }
-    
+
         .proyecto__boton {
             display: flex;
             flex-direction: row;
@@ -86,7 +87,7 @@
             background: #000000;
             border: 1px solid #000000;
             border-radius: 10px;
-    
+
             a {
                 display: flex;
                 flex-direction: row;
@@ -100,12 +101,13 @@
                 font-size: 15px;
                 line-height: 22px;
                 color: #FFFFFF;
-    
+
             }
-    
+
         }
     }
 }
+
 .main_plantilla {
     display: flex;
     flex-direction: column;
@@ -240,5 +242,799 @@
 
         }
 
+    }
+}
+
+@media (max-width: 1225px) {
+    .cont__proyectos {
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+        .proyectos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 25px;
+            width: 100%;
+            background: #ffffff;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .proyectos__img {
+                width: 100%;
+                left: 10px;
+                top: 10px;
+                background: #ececec;
+                border-radius: 10px;
+            }
+
+            .cont__titulo__proyectos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 30px;
+
+                h2 {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+
+                .contador__group {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .fecha__proyecto {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .proyecto__boton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 25px;
+                gap: 10px;
+                width: 100%;
+                background: #000000;
+                border: 1px solid #000000;
+                border-radius: 10px;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    gap: 10px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+
+                }
+
+            }
+        }
+    }
+
+    .main_plantilla {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+
+        .cont__info__portafoliouxui {
+            margin-left: 5em;
+            margin-right: 5em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 0em;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 19px;
+            background: #FFFFFF;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .titulo_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+            }
+
+            .herramientas_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                .img_herramientas {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 20px;
+                }
+
+            }
+
+            .contador__proyectos {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__lvl {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__exp {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    nav {
+        display: flex;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        justify-content: space-between;
+        margin-left: 3em;
+        margin-right: 3em;
+
+        .logo {
+            height: 30px;
+        }
+
+        .menu {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .cont__proyectos {
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+        .proyectos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 25px;
+            width: 100%;
+            background: #ffffff;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .proyectos__img {
+                width: 100%;
+                left: 10px;
+                top: 10px;
+                background: #ececec;
+                border-radius: 10px;
+            }
+
+            .cont__titulo__proyectos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 30px;
+
+                h2 {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+
+                .contador__group {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .fecha__proyecto {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .proyecto__boton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 25px;
+                gap: 10px;
+                width: 100%;
+                background: #000000;
+                border: 1px solid #000000;
+                border-radius: 10px;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    gap: 10px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+
+                }
+
+            }
+        }
+    }
+
+    .main_plantilla {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+
+        .cont__info__portafoliouxui {
+            margin-left: 3em;
+            margin-right: 3em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 0em;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 19px;
+            background: #FFFFFF;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .titulo_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+            }
+
+            .herramientas_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                .img_herramientas {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 20px;
+                }
+
+            }
+
+            .contador__proyectos {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__lvl {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__exp {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    nav {
+        display: flex;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+
+        .logo {
+            height: 30px;
+        }
+
+        .menu {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .cont__proyectos {
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+        .proyectos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 25px;
+            width: 100%;
+            background: #ffffff;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .proyectos__img {
+                width: 100%;
+                left: 10px;
+                top: 10px;
+                background: #ececec;
+                border-radius: 10px;
+            }
+
+            .cont__titulo__proyectos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 30px;
+
+                h2 {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+
+                .contador__group {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .fecha__proyecto {
+                    display: flex;
+                    flex-direction: row;
+
+                    p {
+                        font-family: 'Sora';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 136%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .proyecto__boton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 25px;
+                gap: 10px;
+                width: 100%;
+                background: #000000;
+                border: 1px solid #000000;
+                border-radius: 10px;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    gap: 10px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+
+                }
+
+            }
+        }
+    }
+
+    .main_plantilla {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+
+        .cont__info__portafoliouxui {
+            margin-left: 1em;
+            margin-right: 1em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 0em;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 19px;
+            background: #FFFFFF;
+            border: 0.5px solid #A6A6A6;
+            border-radius: 5px;
+
+            .titulo_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 136%;
+                    color: #000000;
+                }
+            }
+
+            .herramientas_plantilla {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                .img_herramientas {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-column-gap: 2px;
+                    grid-row-gap: 0em;
+                }
+
+            }
+
+            .contador__proyectos {
+                display: flex;
+                flex-direction: column;
+
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__lvl {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+
+            .contador__exp {
+                .titulo {
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 136%;
+                    color: #373737;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+
+            }
+
+        }
     }
 }
