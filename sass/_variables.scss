@@ -86,8 +86,8 @@ nav {
     margin-left: 5em;
     margin-right: 5em;
 
-    .logo {
-        height: 30px;
+    #logo {
+        transform: scale(0.9);
     }
 
     .menu {
@@ -188,6 +188,7 @@ nav {
 
 /* ################# RESPONSIVE PIE ############## */
 @media (max-width: 1225px) {
+    
     .pie {
         display: flex;
         flex-direction: column;
