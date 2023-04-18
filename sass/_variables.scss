@@ -1,5 +1,7 @@
 $colorn:#F24E1E;
 $colora:#FDBD39;
+$coloroff:#222222;
+$coloron:#000000;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
@@ -15,18 +17,66 @@ a {
 
 body {
     background: #ffffff;
-    cursor: url("../assets/img/cursor.svg") 12 12,auto;
+    cursor: url("../assets/img/cursor.svg") 12 12, auto;
 }
 
 body::-webkit-scrollbar {
     width: 5px;
-    background: rgba(0, 0, 0, 0);}
+    background: rgba(0, 0, 0, 0);
+}
 
 body::-webkit-scrollbar-thumb {
     background: #000000;
     width: 10px;
     border-radius: 19px;
 }
+
+
+.contactame {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 198px;
+    height: 43px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    color: #FFFFFF;
+    cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+
+    &:hover {
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        transform: scale(1.1);
+        width: 220px;
+        gap: 50px;
+    }
+}
+.cancelar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 10px;
+    width: 151px;
+    height: 43px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    text-align: center;
+}
+
 
 nav {
     display: flex;
@@ -35,15 +85,18 @@ nav {
     justify-content: space-between;
     margin-left: 5em;
     margin-right: 5em;
+
     .logo {
         height: 30px;
     }
-    .menu{
+
+    .menu {
         justify-content: center;
         display: flex;
         align-items: center;
     }
 }
+
 //########### boton de contactar ###########//
 .float__wapp {
     display: flex;
@@ -53,12 +106,14 @@ nav {
     bottom: 50px;
     right: 25px;
     z-index: 1;
+
     .botonfloat__wapp {
-        margin-top: 6px;
-        margin-left: 6px;
+        margin-top: 12px;
+        margin-left: 12px;
         position: absolute;
         z-index: 1;
     }
+
     .backfloat__wapp {
         position: absolute;
         z-index: 0;
@@ -80,12 +135,14 @@ nav {
     margin-top: 3em;
     height: 330px;
     background: #000000;
-    border-radius:0px;
-    .imgenlogo__pie{
+    border-radius: 0px;
+
+    .imgenlogo__pie {
         filter: invert(100%);
     }
-    div{
-        h5{
+
+    div {
+        h5 {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 100;
@@ -94,7 +151,8 @@ nav {
             text-align: center;
             color: #FFFFFF;
         }
-        h6{
+
+        h6 {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
@@ -104,7 +162,8 @@ nav {
             color: #FFFFFF;
         }
     }
-    .redes__pie{
+
+    .redes__pie {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -113,8 +172,9 @@ nav {
         width: 101px;
         height: 25px;
     }
-    div{
-        p{
+
+    div {
+        p {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 100;
@@ -122,9 +182,10 @@ nav {
             line-height: 136%;
             text-align: center;
             color: #FFFFFF;
-                    }
+        }
     }
 }
+
 /* ################# RESPONSIVE PIE ############## */
 @media (max-width: 1225px) {
     .pie {
@@ -137,12 +198,14 @@ nav {
         margin-top: 1em;
         height: 330px;
         background: #000000;
-        border-radius:0px;
-        .imgenlogo__pie{
+        border-radius: 0px;
+
+        .imgenlogo__pie {
             filter: invert(100%);
         }
-        div{
-            h5{
+
+        div {
+            h5 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -151,7 +214,8 @@ nav {
                 text-align: center;
                 color: #FFFFFF;
             }
-            h6{
+
+            h6 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
@@ -161,7 +225,8 @@ nav {
                 color: #FFFFFF;
             }
         }
-        .redes__pie{
+
+        .redes__pie {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -170,8 +235,9 @@ nav {
             width: 101px;
             height: 25px;
         }
-        div{
-            p{
+
+        div {
+            p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -179,10 +245,11 @@ nav {
                 line-height: 136%;
                 text-align: center;
                 color: #FFFFFF;
-                        }
+            }
         }
     }
 }
+
 @media (max-width: 770px) {
     .pie {
         display: flex;
@@ -194,12 +261,14 @@ nav {
         margin-top: 1em;
         height: 330px;
         background: #000000;
-        border-radius:0px;
-        .imgenlogo__pie{
+        border-radius: 0px;
+
+        .imgenlogo__pie {
             filter: invert(100%);
         }
-        div{
-            h5{
+
+        div {
+            h5 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -208,7 +277,8 @@ nav {
                 text-align: center;
                 color: #FFFFFF;
             }
-            h6{
+
+            h6 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
@@ -218,7 +288,8 @@ nav {
                 color: #FFFFFF;
             }
         }
-        .redes__pie{
+
+        .redes__pie {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -227,8 +298,9 @@ nav {
             width: 101px;
             height: 25px;
         }
-        div{
-            p{
+
+        div {
+            p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -236,7 +308,7 @@ nav {
                 line-height: 136%;
                 text-align: center;
                 color: #FFFFFF;
-                        }
+            }
         }
     }
 }
@@ -252,12 +324,14 @@ nav {
         margin-top: 1em;
         height: 330px;
         background: #000000;
-        border-radius:0px;
-        .imgenlogo__pie{
+        border-radius: 0px;
+
+        .imgenlogo__pie {
             filter: invert(100%);
         }
-        div{
-            h5{
+
+        div {
+            h5 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -266,7 +340,8 @@ nav {
                 text-align: center;
                 color: #FFFFFF;
             }
-            h6{
+
+            h6 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
@@ -276,7 +351,8 @@ nav {
                 color: #FFFFFF;
             }
         }
-        .redes__pie{
+
+        .redes__pie {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -285,8 +361,9 @@ nav {
             width: 101px;
             height: 25px;
         }
-        div{
-            p{
+
+        div {
+            p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 100;
@@ -294,7 +371,7 @@ nav {
                 line-height: 136%;
                 text-align: center;
                 color: #FFFFFF;
-                        }
+            }
         }
     }
 }
@@ -307,10 +384,12 @@ nav {
     mix-blend-mode: difference;
     border: none;
 }
+
 .grow-small {
     transform: scale(2.5);
     border: none;
 }
+
 .cursor {
     position: fixed;
     width: 40px;
@@ -323,4 +402,7 @@ nav {
     transform-origin: center center;
     pointer-events: none;
     z-index: 1000;
+}
+p{
+    margin-bottom: 0px;
 }

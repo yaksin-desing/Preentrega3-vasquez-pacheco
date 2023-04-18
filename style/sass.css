@@ -26,6 +26,51 @@ body::-webkit-scrollbar-thumb {
   border-radius: 19px;
 }
 
+.contactame {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+  width: 198px;
+  height: 43px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  color: #FFFFFF;
+  cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+}
+.contactame:hover {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transform: scale(1.1);
+  width: 220px;
+  gap: 50px;
+}
+
+.cancelar {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 10px;
+  width: 151px;
+  height: 43px;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  text-align: center;
+}
+
 nav {
   display: flex;
   margin-top: 2em;
@@ -53,8 +98,8 @@ nav .menu {
   z-index: 1;
 }
 .float__wapp .botonfloat__wapp {
-  margin-top: 6px;
-  margin-left: 6px;
+  margin-top: 12px;
+  margin-left: 12px;
   position: absolute;
   z-index: 1;
 }
@@ -307,6 +352,10 @@ nav .menu {
   z-index: 1000;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 .cont__proyectos {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -331,8 +380,9 @@ nav .menu {
   border-radius: 10px;
 }
 .cont__proyectos .proyectos:hover {
-  background: rgb(250, 250, 250);
-  border: 0.5px solid #2b2b2b;
+  background: rgb(248, 248, 248);
+  border: 2px solid #2b2b2b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 .cont__proyectos .proyectos:hover .proyectos__img {
   width: 100%;
@@ -346,12 +396,22 @@ nav .menu {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5px 25px;
-  gap: 10px;
+  padding: 0px 0px;
+  gap: 50px;
   width: 100%;
   background: #000000;
   border: 1px solid #000000;
   border-radius: 10px;
+  cursor: url("../assets/img/cursor.svg") 12 12, auto;
+}
+.cont__proyectos .proyectos:hover .proyecto__boton a {
+  padding: 5px 30px;
+  width: 100%;
+  gap: 50px;
+}
+.cont__proyectos .proyectos:hover .proyecto__boton a img {
+  width: 37px;
+  visibility: visible;
 }
 .cont__proyectos .proyectos .proyectos__img {
   width: 100%;
@@ -418,9 +478,9 @@ nav .menu {
   justify-content: center;
   align-items: center;
   padding: 5px 25px;
-  gap: 10px;
+  gap: 0px;
   width: 100%;
-  background: #181818;
+  background: #222222;
   border: 1px solid #ffffff;
   border-radius: 10px;
 }
@@ -430,13 +490,17 @@ nav .menu {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 5px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.cont__proyectos .proyectos .proyecto__boton a img {
+  width: 0px;
+  visibility: hidden;
 }
 
 .main_plantilla {
@@ -779,7 +843,7 @@ nav .menu {
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 @media (max-width: 900px) {
@@ -2399,12 +2463,24 @@ nav .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 24px;
-  gap: 23px;
+  justify-content: center;
+  padding: 20px 20px;
+  gap: 25px;
   width: 100%;
-  height: 100%;
   border: 0.5px solid #A6A6A6;
   border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item1:hover {
+  background: rgb(250, 250, 250);
+  border: 2px solid #2b2b2b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.inicio__cont__misservicios .misservicios__items .item1:hover .cont__boton .boton {
+  gap: 50px;
+}
+.inicio__cont__misservicios .misservicios__items .item1:hover .cont__boton .boton img {
+  width: 37px;
+  visibility: visible;
 }
 .inicio__cont__misservicios .misservicios__items .item1 .conten__text {
   display: flex;
@@ -2448,7 +2524,7 @@ nav .menu {
   border: 1px solid #000000;
   border-radius: 10px;
   display: flex;
-  cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+  cursor: url("../assets/img/cursor.svg") 10 12, auto;
 }
 .inicio__cont__misservicios .misservicios__items .item1 .cont__boton .boton p {
   font-family: "Poppins";
@@ -2457,6 +2533,10 @@ nav .menu {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item1 .cont__boton .boton img {
+  width: 0px;
+  visibility: hidden;
 }
 .inicio__cont__misservicios .misservicios__items .item2 {
   display: flex;
@@ -2468,6 +2548,18 @@ nav .menu {
   height: 100%;
   border: 0.5px solid #A6A6A6;
   border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item2:hover {
+  background: rgb(250, 250, 250);
+  border: 2px solid #2b2b2b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.inicio__cont__misservicios .misservicios__items .item2:hover .cont__boton .boton {
+  gap: 50px;
+}
+.inicio__cont__misservicios .misservicios__items .item2:hover .cont__boton .boton img {
+  width: 37px;
+  visibility: visible;
 }
 .inicio__cont__misservicios .misservicios__items .item2 .conten__text {
   display: flex;
@@ -2503,15 +2595,14 @@ nav .menu {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5px 25px;
+  padding: 0px 30px;
   gap: 10px;
   width: 100%;
-  height: 30px;
   background: #000000;
   border: 1px solid #000000;
   border-radius: 10px;
   display: flex;
-  cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+  cursor: url("../assets/img/cursor.svg") 10 12, auto;
 }
 .inicio__cont__misservicios .misservicios__items .item2 .cont__boton .boton p {
   font-family: "Poppins";
@@ -2520,6 +2611,10 @@ nav .menu {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item2 .cont__boton .boton img {
+  width: 0px;
+  visibility: hidden;
 }
 .inicio__cont__misservicios .misservicios__items .item3 {
   display: flex;
@@ -2531,6 +2626,18 @@ nav .menu {
   height: 100%;
   border: 0.5px solid #A6A6A6;
   border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item3:hover {
+  background: rgb(250, 250, 250);
+  border: 2px solid #2b2b2b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.inicio__cont__misservicios .misservicios__items .item3:hover .cont__boton .boton {
+  gap: 50px;
+}
+.inicio__cont__misservicios .misservicios__items .item3:hover .cont__boton .boton img {
+  width: 37px;
+  visibility: visible;
 }
 .inicio__cont__misservicios .misservicios__items .item3 .conten__text {
   display: flex;
@@ -2574,7 +2681,7 @@ nav .menu {
   border: 1px solid #000000;
   border-radius: 10px;
   display: flex;
-  cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+  cursor: url("../assets/img/cursor.svg") 10 12, auto;
 }
 .inicio__cont__misservicios .misservicios__items .item3 .cont__boton .boton p {
   font-family: "Poppins";
@@ -2583,6 +2690,10 @@ nav .menu {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item3 .cont__boton .boton img {
+  width: 0px;
+  visibility: hidden;
 }
 .inicio__cont__misservicios .misservicios__items .item4 {
   display: flex;
@@ -2594,6 +2705,18 @@ nav .menu {
   height: 100%;
   border: 0.5px solid #A6A6A6;
   border-radius: 10px;
+}
+.inicio__cont__misservicios .misservicios__items .item4:hover {
+  background: rgb(250, 250, 250);
+  border: 2px solid #2b2b2b;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.inicio__cont__misservicios .misservicios__items .item4:hover .cont__boton .boton {
+  gap: 50px;
+}
+.inicio__cont__misservicios .misservicios__items .item4:hover .cont__boton .boton img {
+  width: 37px;
+  visibility: visible;
 }
 .inicio__cont__misservicios .misservicios__items .item4 .conten__text {
   display: flex;
@@ -2637,7 +2760,7 @@ nav .menu {
   border: 1px solid #000000;
   border-radius: 10px;
   display: flex;
-  cursor: url("../assets/img/flecha1.svg") 10 12, auto;
+  cursor: url("../assets/img/cursor.svg") 10 12, auto;
 }
 .inicio__cont__misservicios .misservicios__items .item4 .cont__boton .boton p {
   font-family: "Poppins";
@@ -2646,6 +2769,10 @@ nav .menu {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+.inicio__cont__misservicios .misservicios__items .item4 .cont__boton .boton img {
+  width: 0px;
+  visibility: hidden;
 }
 
 .hacer1 {
@@ -2774,21 +2901,9 @@ nav .menu {
 .item4 {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0);
-  border: 0.1px solid #a1a1a1;
-  border-radius: 5px;
-}
-
-.item1:hover,
-.item2:hover,
-.item3:hover,
-.item4:hover {
   background: #ffffff;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  position: relative;
-  border: 0.5px solid #000000;
-  bottom: 10px;
-  cursor: url("../assets/img/cursor.svg") 12 12, auto;
+  border: 0.5px solid #A6A6A6;
+  border-radius: 5px;
 }
 
 .banner__inicio {
@@ -3706,6 +3821,8 @@ nav .menu {
     font-family: "Sora";
   }
   .inicio__cont__misservicios .misservicios__items {
+    margin-left: 1em;
+    margin-right: 1em;
     display: grid;
     margin-top: 2em;
     grid-template-columns: repeat(2, 1fr);
@@ -3717,10 +3834,10 @@ nav .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 0px 0px;
     gap: 23px;
     width: 100%;
-    height: 100%;
+    height: 0%;
     border: 0.5px solid #A6A6A6;
     border-radius: 10px;
   }
@@ -4358,13 +4475,13 @@ nav .menu {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0em;
-    grid-row-gap: 2em;
+    grid-row-gap: 1em;
   }
   .inicio__cont__misservicios .misservicios__items .item1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 25px 25px;
     gap: 23px;
     width: 100%;
     height: 100%;
@@ -4427,7 +4544,7 @@ nav .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 25px 25px;
     gap: 23px;
     width: 100%;
     height: 100%;
@@ -4490,7 +4607,7 @@ nav .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 25px 25px;
     gap: 23px;
     width: 100%;
     height: 100%;
@@ -4553,7 +4670,7 @@ nav .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 25px 25px;
     gap: 23px;
     width: 100%;
     height: 100%;

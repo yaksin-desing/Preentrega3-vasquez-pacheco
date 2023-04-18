@@ -22,8 +22,10 @@
         border-radius: 10px;
 
         &:hover {
-            background: rgb(250, 250, 250);
-            border: 0.5px solid #2b2b2b;
+            background: rgb(248, 248, 248);
+            border: 2px solid #2b2b2b;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            
 
             .proyectos__img {
                 width: 100%;
@@ -38,12 +40,22 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 5px 25px;
-                gap: 10px;
+                padding: 0px 0px;
+                gap: 50px;
                 width: 100%;
-                background: #000000;
+                background: $coloron;
                 border: 1px solid #000000;
                 border-radius: 10px;
+                cursor: url("../assets/img/cursor.svg") 12 12, auto;
+                a{
+                    padding: 5px 30px;
+                    width: 100%;
+                    gap: 50px;
+                    img{
+                        width: 37px;
+                        visibility: visible;
+                    }
+                }
 
             }
         }
@@ -121,9 +133,9 @@
             justify-content: center;
             align-items: center;
             padding: 5px 25px;
-            gap: 10px;
+            gap: 0px;
             width: 100%;
-            background: #181818;
+            background: $coloroff;
             border: 1px solid #ffffff;
             border-radius: 10px;
 
@@ -133,13 +145,17 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                gap: 10px;
+                gap: 5px;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 22px;
-                color: #FFFFFF;
+                color: #ffffff;
+                img{
+                    width: 0px;
+                    visibility: hidden;
+                }
 
             }
 
@@ -538,7 +554,7 @@
                     font-weight: 300;
                     font-size: 15px;
                     line-height: 22px;
-                    color: #FFFFFF;
+                    color: #ffffff;
 
                 }
 

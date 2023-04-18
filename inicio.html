@@ -10,7 +10,10 @@
     <meta name="keywords"
         content="home,inicio,portafolio,ux,ui,diseñador,diseñador Ux-Ui,diseñador ux,Research,Wrinting,desarrollador movil,fronten,freelancer,programador,portafolio,desarrillador web">
     <link rel="shortcut icon" href="assets/img/iconweb.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/sass.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- barbajs and gsap  -->
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
@@ -20,7 +23,49 @@
 </head>
 
 <body data-barba="wrapper">
+    <!-- Formulario boostrap  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <h2 class="tituloc">
+                            <strong>Hola!</strong>&#128075¿ en que podria ayudarte ?
+                        </h2>
+                        <p class="parrafo">
+                            Puedes dejar tus datos o comunicarte directamente conmigo a mi correo
+                            electrónico <strong>Yaksinvasquez@gmail.com</strong> o mi WhatsApp
+                            </strong><strong>(+57) 321 5841003 </strong>
+                        </p>
 
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Telefono de contacto:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">¿En que podria
+                                ayudarte?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div data-bs-dismiss="modal"><a class="cancelar" href=""> Cancelar </a></div>
+                    <button type="button" class="contactame">Enviar mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Formulario boostrap  -->
     <div class="loader">
         <div class="page-transition"></div>
         <div class="pages-transition"></div>
@@ -60,8 +105,8 @@
                 </p>
                 <div class="home__botones">
                     <div class="home__boton cursor-scale small">
-                        <a href="index.html">Contactame</a>
-                        <img src="assets/img/flechaboton.svg" alt="flecha">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contactame
+                        <img src="assets/img/flechaboton.svg" alt="flecha"></a>
                     </div>
                 </div>
                 <div class="home__gridcontadores">
@@ -87,13 +132,13 @@
         <section class="inicio__cont__misservicios">
 
             <div class="misservicios__titulo">
-                <div class="misservicios__cont__1">
+                <div data-aos="fade-right" class="misservicios__cont__1">
                     <img src="assets\img\flechatitulo.svg" alt="flechatitulo">
                     <p>
                         Mis servicios
                     </p>
                 </div>
-                <div class="misservicios__cont__2">
+                <div data-aos="fade-up" class="misservicios__cont__2">
                     <h3>
                         “ Mira estas son mis especialidades y los complementos que tengo para tu producto y negocio ”
                     </h3>
@@ -101,7 +146,7 @@
             </div>
 
             <div class="misservicios__items">
-                <div class="item1">
+                <div data-aos="fade-right" class="item1">
                     <img src="assets\img\imgenmiservicios-uxui.svg" alt="imgenmiservicios-uxui">
                     <div class="conten__text">
                         <h5>
@@ -118,7 +163,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="item2">
+                <div data-aos="fade-right" class="item2">
                     <img src="assets\img\imgenmiservicios-uxresearch.svg" alt="imgenmiservicios-uxresearch">
                     <div class="conten__text">
                         <h5>
@@ -135,7 +180,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="item3">
+                <div data-aos="fade-right" class="item3">
                     <img src="assets\img\imgenmiservicios-uxwriting.svg" alt="imgenmiservicios-uxwriting">
                     <div class="conten__text">
                         <h5>
@@ -152,7 +197,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="item4">
+                <div data-aos="fade-right" class="item4">
                     <img src="assets\img\imgenmiservicios-developer.svg" alt="imgenmiservicios-developer">
                     <div class="conten__text">
                         <h5>
@@ -174,13 +219,13 @@
         <!-- ########### mis ultimos trabajos #############33-->
         <section class="hacer1">
             <div class="misservicios__titulo">
-                <div class="misservicios__cont__1">
+                <div data-aos="fade-right" class="misservicios__cont__1">
                     <img src="assets\img\flechatitulo.svg" alt="flechatitulo">
                     <p>
                         He trabajado en
                     </p>
                 </div>
-                <div class="misservicios__cont__2">
+                <div data-aos="fade-up" class="misservicios__cont__2">
                     <h3>
                         “ Estas son los últimos lugares en donde e trabajado ”
                     </h3>
@@ -250,16 +295,16 @@
 
             </div>
             <!-- ########## BANNER DE PIE DE PAGINA ############ -->
-            <section class="banner__inicio">
+            <section data-aos="fade-right" class="banner__inicio">
                 <div>
                     <div>
-                        <h2>
+                        <h2 data-aos="fade-up">
                             Trabajemos juntos y creemos experiencias positivas.
                         </h2>
                     </div>
                     <div class="home__botones">
-                        <div class="home__boton cursor-scale small">
-                            <a href="index.html">Contactame</a>
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="home__boton cursor-scale small">
+                            <a  href="#">Contactame</a>
                             <img src="assets/img/flechaboton.svg" alt="flecha">
                         </div>
                     </div>
@@ -277,11 +322,11 @@
                     </lottie-player>
                 </a>
             </div>
-            <div>
-                <h5>Llamame a :</h5>
+            <div data-aos="fade-up">
+                <h5 >Llamame al :</h5>
                 <h6>+57 321 584 1003</h6>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <h5>Mi correo :</h5>
                 <h6>Yaksinvasquez@gmail.com</h6>
             </div>
@@ -303,6 +348,13 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
 </body>
 
 
