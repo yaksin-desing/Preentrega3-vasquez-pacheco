@@ -57,7 +57,7 @@ iconoMenu.addEventListener('click', (e) => {
     menu.classList.toggle('active');
     document.body.classList.toggle('opacity');
     const rutaActual = e.target.getAttribute('src');
-    if(rutaActual == '../assets/img/menu1.svg'){
+    if(rutaActual == '../assets/img/menu1.svg' || rutaActual == 'assets/img/menu1.svg' ){
         e.target.setAttribute('src','../assets/img/menu2.svg');
         console.log("imagen2")
     }else{
