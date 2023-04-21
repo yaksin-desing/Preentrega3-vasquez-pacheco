@@ -25,7 +25,7 @@
             background: rgb(248, 248, 248);
             border: 2px solid #2b2b2b;
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-            
+
 
             .proyectos__img {
                 width: 100%;
@@ -47,11 +47,13 @@
                 border: 1px solid #000000;
                 border-radius: 10px;
                 cursor: url("../assets/img/cursor.svg") 12 12, auto;
-                a{
+
+                a {
                     padding: 5px 30px;
                     width: 100%;
                     gap: 50px;
-                    img{
+
+                    img {
                         width: 37px;
                         visibility: visible;
                     }
@@ -152,7 +154,8 @@
                 font-size: 15px;
                 line-height: 22px;
                 color: #ffffff;
-                img{
+
+                img {
                     width: 0px;
                     visibility: hidden;
                 }
@@ -576,7 +579,7 @@
             height: 30px;
         }
 
-        .bars__menu{
+        .bars__menu {
             width: 40px;
             height: 20px;
             transform: translate(-50%, -50%) scale(1);
@@ -848,25 +851,110 @@
 }
 
 @media (max-width: 600px) {
-    nav {
+
+
+    .barra__menu {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin-top: 2em;
         margin-bottom: 2em;
-        justify-content: space-between;
         margin-left: 1em;
         margin-right: 1em;
-
-        .logo {
-            height: 30px;
+        align-items: center;
+        .cont__logo__nav {
+            transform: scale(1);
         }
 
-        .bars__menu{
-            width: 40px;
-            height: 20px;
-            transform: translate(-50%, -50%) scale(1);
-            cursor: pointer;
+        .icono-menu {
+            display: flex;
+            justify-content: end;
+            position: fixed;
+            position: relative;
+            z-index: 100;
         }
     }
+    .cont__logo__menu {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        border-bottom: 1px solid #838383;
+    
+        .logo__menu {
+            align-items: end;
+            padding-left: 1em;
+            padding-bottom: 10px;
+            filter: invert(100%);
+            transform: scale(0.8);
+        }
+    
+    }
+    .cont-menu {
+        z-index: 99;
+        background: rgba(0, 0, 0, 0.575);
+        backdrop-filter: blur(14.5px);
+        box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
+        width: 100vw;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: all .5s ease-in-out;
+    }
+    
+    .active {
+        border-radius: 1000px 0px 0px 1000px;
+        transform: translate(90vw);
+        visibility: hidden;
+        position: fixed;
+        background: #ffffff;
+    }
+    
+    .cont-menu {
+        padding: 0em 0px 20px 0px;
+        list-style: none;
+        ul li a {
+            justify-content: end;
+            align-items: end;
+            color: rgb(255, 255, 255);
+            display: block;
+            text-decoration: none;
+            padding: 10px  1.5em;
+            cursor: pointer;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 136%;
+            color: #ffffff;
+        }
+        ul p {
+            justify-content: start;
+            align-items: start;
+            color: rgb(255, 255, 255);
+            display: block;
+            font-size: 60px;
+            text-decoration: none;
+            padding: 10px 1em;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 136%;
+            border-bottom: 1px solid #838383;
+        }
+    }
+    
+    .redes__menu{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px 0em;
+        justify-content: center;
+    }
+    
+
 
     .main_plantilla {
         display: flex;
