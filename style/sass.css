@@ -99,8 +99,8 @@ body::-webkit-scrollbar-thumb {
 }
 .cont__logo__menu .logo__menu {
   align-items: end;
-  filter: invert(100%);
   padding: 10px 50px;
+  filter: invert(100%);
 }
 
 .icono-menu img {
@@ -111,18 +111,20 @@ body::-webkit-scrollbar-thumb {
 
 .cont-menu {
   z-index: 99;
-  background-color: rgb(42, 42, 42);
-  box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
-  width: 90vw;
+  background: rgba(0, 0, 0, 0.61);
+  -webkit-backdrop-filter: blur(14.5px);
+          backdrop-filter: blur(14.5px);
+  box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
+  width: 100vw;
   height: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
 .active {
-  border-radius: 1000px;
+  border-radius: 1000px 0px 0px 1000px;
   transform: translate(90vw);
   visibility: hidden;
   position: fixed;
@@ -139,26 +141,47 @@ body::-webkit-scrollbar-thumb {
   align-items: end;
   color: rgb(102, 102, 102);
   display: block;
-  font-size: 18px;
   text-decoration: none;
   padding: 10px 50px;
   cursor: pointer;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 136%;
+  color: #ffffff;
 }
 
 .cont-menu ul p {
   justify-content: end;
   align-items: end;
-  color: white;
+  color: rgb(255, 255, 255);
   display: block;
-  font-size: 30px;
+  font-size: 60px;
   text-decoration: none;
   padding: 10px 50px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 136%;
 }
 
 .cont-menu ul li a:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 38px;
+}
+
+.redes__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 50px;
+}
+
+.redes__menu a img:hover {
+  transform: scale(1.5);
 }
 
 .float__wapp {

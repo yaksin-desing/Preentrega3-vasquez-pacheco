@@ -77,8 +77,9 @@ body::-webkit-scrollbar-thumb {
     color: #000000;
     text-align: center;
 }
+
 //########### barra de navegacion ###########//
-.barra__menu{
+.barra__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,82 +88,112 @@ body::-webkit-scrollbar-thumb {
     margin-left: 5em;
     margin-right: 5em;
     align-items: center;
-    .cont__logo__nav{
+
+    .cont__logo__nav {
         transform: scale(1);
     }
-    .icono-menu{
+
+    .icono-menu {
         display: flex;
         justify-content: end;
-        position:fixed;
+        position: fixed;
         position: relative;
         z-index: 100;
     }
 }
-.cont__logo__menu{
+
+.cont__logo__menu {
     display: flex;
     justify-content: start;
     width: 100%;
-    .logo__menu{
+
+    .logo__menu {
         align-items: end;
-        filter: invert(100%);
         padding: 10px 50px;
+        filter: invert(100%);
     }
 }
 
-.icono-menu img{
+.icono-menu img {
     vertical-align: top;
     width: 40px;
     cursor: pointer;
 }
 
-.cont-menu{
+.cont-menu {
     z-index: 99;
-    background-color: rgb(42,42,42);
-    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
-    width: 90vw; 
+    background: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(14.5px);
+    box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
+    width: 100vw;
     height: 100%;
     position: fixed;
     top: 0;
-    right:0;
-    transition: all .5s ease;
+    right: 0;
+    transition: all .5s ease-in-out;
 }
-.active{
-    border-radius: 1000px;
+
+.active {
+    border-radius: 1000px 0px 0px 1000px;
     transform: translate(90vw);
-    visibility:hidden;
+    visibility: hidden;
     position: fixed;
     background: #ffffff;
 }
-.cont-menu ul{
+
+.cont-menu ul {
     padding: 100px 0px 20px 0px;
     list-style: none;
 }
 
-.cont-menu  ul li a{
+.cont-menu ul li a {
     justify-content: end;
     align-items: end;
     color: rgb(102, 102, 102);
     display: block;
-    font-size: 18px;
     text-decoration: none;
     padding: 10px 50px;
     cursor: pointer;
-}
-.cont-menu ul p{
-    justify-content: end;
-    align-items: end;
-    color: white;
-    display: block;
-    font-size: 30px;
-    text-decoration: none;
-    padding: 10px 50px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 136%;
+    color: #ffffff;
 }
 
-.cont-menu ul li a:hover{
+.cont-menu ul p {
+    justify-content: end;
+    align-items: end;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 60px;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 136%;
+}
+
+.cont-menu ul li a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 38px;
 }
+
+.redes__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 50px;
+}
+
+.redes__menu a img:hover{
+    transform: scale(1.5)
+}
+
 
 //########### barra de navegacion ###########//
 // nav {
@@ -200,11 +231,11 @@ body::-webkit-scrollbar-thumb {
 //     margin-top: 6px;
 //     transform-origin: 0px 100%;
 //     transition: all 300ms;
-    
+
 // }
 // .activeline1__bars-menu {
 //     transform: rotate(45deg) translate(-6px, 1px);
-    
+
 // }
 // .activeline2__bars-menu {
 //     opacity: 0;
@@ -502,10 +533,12 @@ body::-webkit-scrollbar-thumb {
     mix-blend-mode: difference;
     border: none;
 }
+
 .grow-small {
     transform: scale(2.5);
     border: none;
 }
+
 .cursor {
     position: fixed;
     width: 40px;
@@ -519,6 +552,7 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
     z-index: 1000;
 }
+
 p {
     margin-bottom: 0px;
 }

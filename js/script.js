@@ -59,10 +59,10 @@ iconoMenu.addEventListener('click', (e) => {
     const rutaActual = e.target.getAttribute('src');
     if(rutaActual == '../assets/img/menu1.svg' || rutaActual == 'assets/img/menu1.svg' ){
         e.target.setAttribute('src','../assets/img/menu2.svg');
-        console.log("imagen2")
+        
     }else{
         e.target.setAttribute('src','../assets/img/menu1.svg');
-        console.log("imagen1")
+
     }
 });
 
