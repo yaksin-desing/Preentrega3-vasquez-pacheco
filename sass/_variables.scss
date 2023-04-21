@@ -106,12 +106,16 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: start;
     width: 100%;
+    border-bottom: 1px solid #838383;
 
     .logo__menu {
         align-items: end;
-        padding: 10px 50px;
+        padding-left: 5em;
+        padding-bottom: 10px;
         filter: invert(100%);
+        transform: scale(0.8);
     }
+
 }
 
 .icono-menu img {
@@ -122,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 
 .cont-menu {
     z-index: 99;
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba(0, 0, 0, 0.842);
     backdrop-filter: blur(14.5px);
     box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
     width: 100vw;
@@ -142,52 +146,55 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cont-menu ul {
-    padding: 100px 0px 20px 0px;
+    padding: 2em 0px 20px 0px;
     list-style: none;
 }
 
 .cont-menu ul li a {
     justify-content: end;
     align-items: end;
-    color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px  5em;
     cursor: pointer;
     font-family: 'Sora';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 20px;
     line-height: 136%;
     color: #ffffff;
 }
 
 .cont-menu ul p {
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
+    align-items: start;
     color: rgb(255, 255, 255);
     display: block;
     font-size: 60px;
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px 4em;
     font-family: 'Sora';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 136%;
+    border-bottom: 1px solid #838383;
 }
 
 .cont-menu ul li a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 38px;
+    font-weight: 300;
 }
 
 .redes__menu{
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 10px 50px;
+    padding: 10px 6em;
 }
 
 .redes__menu a img:hover{
