@@ -12,10 +12,9 @@
     <link rel="shortcut icon" href="assets/img/iconweb.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/sass.css">
+    <link rel="stylesheet" href="../style/sass.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- barbajs and gsap  -->
-    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
 
@@ -76,27 +75,33 @@
             <a href="https://wa.me/573215841003?text=Hola%20%F0%9F%91%8B%20jaksin,%20estuve%20viendo%20%F0%9F%91%80%20tu%20portafolio%20%F0%9F%92%BC%20,%20me%20gustaria%20platicar%20contigo"
                 target="_blank" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
                 data-aos-duration="500">
-                <img class="botonfloat__wapp" src="assets\img\float.svg" alt="">
-                <img class="backfloat__wapp" src="assets\img\backfloat.svg" alt=""></a>
+                <img class="botonfloat__wapp" src="../assets\img\float.svg" alt="">
+                <img class="backfloat__wapp" src="../assets\img\backfloat.svg" alt=""></a>
         </div>
         <header>
-            <nav>
-                <div>
-                    <a href="index.html">
-                        <lottie-player id="logo" src="assets/img/logoanimado.json" speed="1" style="width:100px;"
+            <nav class="barra__menu">
+                <div class="cont__logo__nav">
+                    <a href="../pages/index.html">
+                        <lottie-player id="logo" src="../assets/img/logoanimado.json" speed="1" style="width:100px;"
                             autoplay>
-                        </lottie-play.er>
+                        </lottie-player>
                     </a>
                 </div>
-                <div class="bars__menu">
-                    <span class="line1__bars-menu"></span>
-                    <span class="line2__bars-menu"></span>
-                    <span class="line3__bars-menu"></span>
+                <div class="icono-menu">
+                    <img src="../assets/img/menu1.svg" id="icono-menu">
                 </div>
-                <!-- <div style="justify-content: center; display: flex; align-items: center;">
-                    <a class="menu" href="#"><img src="assets/img/menu.png" alt="menu"></a>
-                </div> -->
             </nav>
+            <div class="cont-menu active" id="menu">
+                <ul>
+                    <div class="cont__logo__menu"><img class="logo__menu" src="../assets/img/logo2.svg" alt="logo_menu"></div>
+                    <li><a href="#"> Home </a></li>
+                    <p> Servicios</p>
+                    <li><a href="p_ux_ui.html"> Diseñador ux-ui </a> </li>
+                    <li><a href="p_ux_research.html"> Ux Research </a> </li>
+                    <li><a href="p_ux_writing.html"> Ux Writing </a> </li>
+                    <li><a href="p_ux_developer.html"> Desarrollador Web-Movil </a> </li>
+                </ul>
+            </div>
         </header>
 
         <!--############ INICIO HOME ############## -->
@@ -111,7 +116,7 @@
                 <div class="home__botones">
                     <div class="home__boton cursor-scale small">
                         <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contactame
-                        <img src="assets/img/flechaboton.svg" alt="flecha"></a>
+                            <img src="../assets/img/flechaboton.svg" alt="flecha"></a>
                     </div>
                 </div>
                 <div class="home__gridcontadores">
@@ -126,7 +131,7 @@
                 </div>
             </div>
             <div class="inicio__img">
-                <img src="assets\img\fotoinicio.png" alt="fotoinicio">
+                <img src="../assets\img\fotoinicio.png" alt="fotoinicio">
             </div>
         </section>
         <div class="inicio__contenedorcintas">
@@ -138,7 +143,7 @@
 
             <div class="misservicios__titulo">
                 <div data-aos="fade-right" class="misservicios__cont__1">
-                    <img src="assets\img\flechatitulo.svg" alt="flechatitulo">
+                    <img src="../assets\img\flechatitulo.svg" alt="flechatitulo">
                     <p>
                         Mis servicios
                     </p>
@@ -152,70 +157,74 @@
 
             <div class="misservicios__items">
                 <div data-aos="fade-right" class="item1">
-                    <img src="assets\img\imgenmiservicios-uxui.svg" alt="imgenmiservicios-uxui">
+                    <img src="../assets\img\imgenmiservicios-uxui.svg" alt="imgenmiservicios-uxui">
                     <div class="conten__text">
                         <h5>
                             Diseñador UX-UI
                         </h5>
                         <p>
-                            No solo me encargo de hacer cosas bonitas, sino que también hago que estas cosas sean realmente útiles y resuelvan las necesidades reales de los usuarios. 
+                            No solo me encargo de hacer cosas bonitas, sino que también hago que estas cosas sean
+                            realmente útiles y resuelvan las necesidades reales de los usuarios.
                         </p>
                     </div>
                     <div class="cont__boton">
-                        <a class="boton cursor-scale small" href="pages/p_ux_ui.html">
+                        <a class="boton cursor-scale small" href="p_ux_ui.html">
                             <p>Ver proyectos</p>
-                            <img src="assets/img/flechaboton.svg" alt="flecha">
+                            <img src="../assets/img/flechaboton.svg" alt="flecha">
                         </a>
                     </div>
                 </div>
                 <div data-aos="fade-right" class="item2">
-                    <img src="assets\img\imgenmiservicios-uxresearch.svg" alt="imgenmiservicios-uxresearch">
+                    <img src="../assets\img\imgenmiservicios-uxresearch.svg" alt="imgenmiservicios-uxresearch">
                     <div class="conten__text">
                         <h5>
                             UX-Research
                         </h5>
                         <p>
-                            Me encargo mediante investigación y análisis de identificar las necesidades de tus usuarios con el fin mejorar tus producto y aumentar la  fidelización.
+                            Me encargo mediante investigación y análisis de identificar las necesidades de tus usuarios
+                            con el fin mejorar tus producto y aumentar la fidelización.
                         </p>
                     </div>
                     <div class="cont__boton">
-                        <a class="boton cursor-scale small" href="pages/p_ux_research.html">
+                        <a class="boton cursor-scale small" href="p_ux_research.html">
                             <p>Ver proyectos</p>
-                            <img src="assets/img/flechaboton.svg" alt="flecha">
+                            <img src="../assets/img/flechaboton.svg" alt="flecha">
                         </a>
                     </div>
                 </div>
                 <div data-aos="fade-right" class="item3">
-                    <img src="assets\img\imgenmiservicios-uxwriting.svg" alt="imgenmiservicios-uxwriting">
+                    <img src="../assets\img\imgenmiservicios-uxwriting.svg" alt="imgenmiservicios-uxwriting">
                     <div class="conten__text">
                         <h5>
                             UX-Writing
                         </h5>
                         <p>
-                            Diseño la forma en la que tus productos hablan y se comunican con los usuarios también mejoro la experiencia que estos dejan usando las  palabras correctas.
+                            Diseño la forma en la que tus productos hablan y se comunican con los usuarios también
+                            mejoro la experiencia que estos dejan usando las palabras correctas.
                         </p>
                     </div>
                     <div class="cont__boton">
-                        <a class="boton cursor-scale small" href="pages/p_ux_writing.html">
+                        <a class="boton cursor-scale small" href="p_ux_writing.html">
                             <p>Ver proyectos</p>
-                            <img src="assets/img/flechaboton.svg" alt="flecha">
+                            <img src="../assets/img/flechaboton.svg" alt="flecha">
                         </a>
                     </div>
                 </div>
                 <div data-aos="fade-right" class="item4">
-                    <img src="assets\img\imgenmiservicios-developer.svg" alt="imgenmiservicios-developer">
+                    <img src="../assets\img\imgenmiservicios-developer.svg" alt="imgenmiservicios-developer">
                     <div class="conten__text">
                         <h5>
                             Developer web-movil
                         </h5>
                         <p>
-                            Desarrollo del lado frontend paginas web  llamativas e interactivas con HTML5, CSS, JS y también aplicaciones para móvil usando el framework Flutter. 
+                            Desarrollo del lado frontend paginas web llamativas e interactivas con HTML5, CSS, JS y
+                            también aplicaciones para móvil usando el framework Flutter.
                         </p>
                     </div>
                     <div class="cont__boton">
-                        <a class="boton cursor-scale small" href="pages/p_ux_developer.html">
+                        <a class="boton cursor-scale small" href="p_ux_developer.html">
                             <p>Ver proyectos</p>
-                            <img src="assets/img/flechaboton.svg" alt="flecha">
+                            <img src="../assets/img/flechaboton.svg" alt="flecha">
                         </a>
                     </div>
                 </div>
@@ -225,7 +234,7 @@
         <section class="hacer1">
             <div class="misservicios__titulo">
                 <div data-aos="fade-right" class="misservicios__cont__1">
-                    <img src="assets\img\flechatitulo.svg" alt="flechatitulo">
+                    <img src="../assets\img\flechatitulo.svg" alt="flechatitulo">
                     <p>
                         He trabajado en
                     </p>
@@ -241,7 +250,7 @@
                 <div class="item2">
                     <div class="cabetitulo1">
                         <div class="botonflacha1">
-                            <img src="assets\img\google.svg" alt="">
+                            <img src="../assets\img\google.svg" alt="">
                         </div>
                         <div class="cabe1" style="align-items: end; display: flex; flex-direction: column;">
                             <strong class="tituloitem">Gerencia</strong>
@@ -262,7 +271,7 @@
                 <div class="item2">
                     <div class="cabetitulo1">
                         <div class="botonflacha1">
-                            <img src="assets\img\meta.png" alt="">
+                            <img src="../assets\img\meta.png" alt="">
                         </div>
                         <div class="cabe1" style="align-items: end; display: flex; flex-direction: column;">
                             <strong class="tituloitem">Area de Diseño</strong>
@@ -283,7 +292,7 @@
                 <div class="item2">
                     <div class="cabetitulo1">
                         <div class="botonflacha1">
-                            <img src="assets\img\amazon.svg" alt="">
+                            <img src="../assets\img\amazon.svg" alt="">
                         </div>
                         <div class="cabe1" style="align-items: end; display: flex; flex-direction: column;">
                             <strong class="tituloitem">Area de Desarrollo</strong>
@@ -308,14 +317,15 @@
                         </h2>
                     </div>
                     <div class="home__botones">
-                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="home__boton cursor-scale small">
-                            <a  href="#">Contactame</a>
-                            <img src="assets/img/flechaboton.svg" alt="flecha">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="home__boton cursor-scale small">
+                            <a href="#">Contactame</a>
+                            <img src="../assets/img/flechaboton.svg" alt="flecha">
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img style="width: 100%;" src="assets/img/imgbannerinicio.svg" alt="imgbannerinicio">
+                    <img style="width: 100%;" src="../assets/img/imgbannerinicio.svg" alt="imgbannerinicio">
                 </div>
             </section>
             <!-- ########## INICIO DEL PIE DE PAGINA ############ -->
@@ -323,12 +333,12 @@
         <div class="pie">
             <div class="imgenlogo__pie">
                 <a href="index.html">
-                    <lottie-player id="logo" src="assets/img/logoanimado.json" speed="1" style="width:100px;" autoplay>
+                    <lottie-player id="logo" src="../assets/img/logoanimado.json" speed="1" style="width:100px;" autoplay>
                     </lottie-player>
                 </a>
             </div>
             <div data-aos="fade-up">
-                <h5 >Llamame al :</h5>
+                <h5>Llamame al :</h5>
                 <h6>+57 321 584 1003</h6>
             </div>
             <div data-aos="fade-up">
@@ -338,28 +348,31 @@
             <!-- Redes sociales -->
             <div class="redes__pie">
                 <a href="https://www.facebook.com/yaksin.vasques.5/" target="_blank"><img
-                        src="assets/img/redfacebook.png" alt="logofacebook"></a>
+                        src="../assets/img/redfacebook.png" alt="logofacebook"></a>
                 <a href="https://www.linkedin.com/in/jakhsin-sains-vasquez-pacheco-40a25211a/" target="_blank"><img
-                        src="assets/img/redlinkedin.png" alt="logolinkedin"></a>
-                <a href="https://www.instagram.com/yakhsin/" target="_blank"><img src="assets/img/redinstagram.png"
+                        src="../assets/img/redlinkedin.png" alt="logolinkedin"></a>
+                <a href="https://www.instagram.com/yakhsin/" target="_blank"><img 
+                        src="../assets/img/redinstagram.png"
                         alt="logoinstagram"></a>
             </div>
             <div>
                 <p>© 2023 Yaksin sains</p>
             </div>
         </div>
+
+        <!-- javascripts -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js">
+        </script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
     </main>
-    <!-- javascripts -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
 </body>
 
 

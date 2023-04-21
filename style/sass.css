@@ -71,45 +71,94 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-nav {
+.barra__menu {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 2em;
   margin-bottom: 2em;
-  justify-content: space-between;
   margin-left: 5em;
   margin-right: 5em;
+  align-items: center;
 }
-nav #logo {
-  transform: scale(0.9);
+.barra__menu .cont__logo__nav {
+  transform: scale(1);
 }
-nav .bars__menu {
+.barra__menu .icono-menu {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  position: relative;
+  z-index: 100;
+}
+
+.cont__logo__menu {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.cont__logo__menu .logo__menu {
+  align-items: end;
+  filter: invert(100%);
+  padding: 10px 50px;
+}
+
+.icono-menu img {
+  vertical-align: top;
   width: 40px;
-  height: 20px;
-  transform: translate(-50%, -50%) scale(1);
   cursor: pointer;
 }
 
-.bars__menu span {
+.cont-menu {
+  z-index: 99;
+  background-color: rgb(42, 42, 42);
+  box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+  width: 90vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.active {
+  border-radius: 1000px;
+  transform: translate(90vw);
+  visibility: hidden;
+  position: fixed;
+  background: #ffffff;
+}
+
+.cont-menu ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li a {
+  justify-content: end;
+  align-items: end;
+  color: rgb(102, 102, 102);
   display: block;
-  width: 100%;
-  height: 3px;
-  background: #000000;
-  margin-top: 6px;
-  transform-origin: 0px 100%;
-  transition: all 300ms;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
 }
 
-.activeline1__bars-menu {
-  transform: rotate(45deg) translate(-6px, 1px);
+.cont-menu ul p {
+  justify-content: end;
+  align-items: end;
+  color: white;
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 10px 50px;
 }
 
-.activeline2__bars-menu {
-  opacity: 0;
-  margin-left: -30px;
-}
-
-.activeline3__bars-menu {
-  transform: rotate(-45deg) translate(-6px, 2px);
+.cont-menu ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 38px;
 }
 
 .float__wapp {
