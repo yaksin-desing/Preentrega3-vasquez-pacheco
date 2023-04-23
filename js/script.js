@@ -1,4 +1,3 @@
-
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
@@ -34,6 +33,8 @@ cursorScale.forEach(link => {
         }
     });
 });
+
+
 LottieInteractivity.create({
     mode: "chain",
     player: "#logo",
@@ -57,147 +58,115 @@ iconoMenu.addEventListener('click', (e) => {
     menu.classList.toggle('active');
     document.body.classList.toggle('opacity');
     const rutaActual = e.target.getAttribute('src');
-    if(rutaActual == '../assets/img/menu1.svg' || rutaActual == 'assets/img/menu1.svg' ){
-        e.target.setAttribute('src','../assets/img/menu2.svg');
-        
-    }else{
-        e.target.setAttribute('src','../assets/img/menu1.svg');
+    if (rutaActual == '../assets/img/menu1.svg' || rutaActual == 'assets/img/menu1.svg') {
+        e.target.setAttribute('src', '../assets/img/menu2.svg');
+
+    } else {
+        e.target.setAttribute('src', '../assets/img/menu1.svg');
 
     }
 });
 
+// animacion barba.js//
+
+pageTransition = () => {
+    var timeline = gsap.timeline();
+
+    timeline.to("header", {
+        zIndex: 1
+    });
+
+    timeline.to(".page-transition", {
+        duration: .2,
+        height: "120%",
+        button: "100%",
+
+    });
+    timeline.to(".pages-transition", {
+        duration: .2,
+        height: "120%",
+        button: "100%",
+    });
+    timeline.to(".pages-transition", {
+        duration: .3,
+        height: "0%",
+        button: "0%",
+        delay: .1,
+        yoyo: true
+
+    });
+    timeline.to(".page-transition", {
+        duration: .4,
+        height: "0%",
+        button: "0%",
+        delay: .1,
+        yoyo: true
+
+    });
+
+    timeline.set(".page-transition", {
+        button: "-100%"
+    });
+}
+
+mainAnimation = () => {
+    var timeline = gsap.timeline();
+
+    timeline.from(".container", {
+        duration: 1,
+        y: 30,
+        opacity: 0,
+        stagger: {
+            amount: .4
+        },
+        delay: .8
+    });
+}
+
+delay = (n) => {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n);
+    })
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// pageTransition = () => {
-//     var timeline = gsap.timeline();
-
-//     timeline.to("header", {
-//         zIndex: 1
-//     });
-
-//     timeline.to(".page-transition", {
-//         duration: .2,
-//         height: "120%",
-//         button: "100%",
-
-//     });
-//     timeline.to(".pages-transition", {
-//         duration: .2,
-//         height: "120%",
-//         button: "100%",
-//     });
-//     timeline.to(".pages-transition", {
-//         duration: .3,
-//         height: "0%",
-//         button: "0%",
-//         delay: .1,
-//         yoyo: true
-
-//     });
-//     timeline.to(".page-transition", {
-//         duration: .4,
-//         height: "0%",
-//         button: "0%",
-//         delay: .1,
-//         yoyo: true
-
-//     });
-
-//     timeline.set(".page-transition", {
-//         button: "-100%"
-//     });
-// }
-
-// mainAnimation = () => {
-//     var timeline = gsap.timeline();
-
-//     timeline.from(".container", {
-//         duration: 1,
-//         y: 30,
-//         opacity: 0,
-//         stagger: {
-//             amount: .4
-//         },
-//         delay: .8
-//     });
-// }
-
-// delay = (n) => {
-//     n = n || 2000;
-//     return new Promise((done) => {
-//         setTimeout(() => {
-//             done();
-//         }, n);
-//     })
-// }
-
-
-// document.querySelector(".bars__menu").addEventListener("click", animateBars);
-// var line1__bars = document.querySelector(".line1__bars-menu");
-// var line2__bars = document.querySelector(".line2__bars-menu");
-// var line3__bars = document.querySelector(".line3__bars-menu");
-
-// function animateBars() {
-//     line1__bars.classList.toggle("activeline1__bars-menu");
-//     line2__bars.classList.toggle("activeline2__bars-menu");
-//     line3__bars.classList.toggle("activeline3__bars-menu");
-// }
 
 // barba.init({
 //     sync: true,
 //     transitions: [{
-//             async leave(data) {
-//                 const done = this.async();
-//                 pageTransition();
-//                 await delay(1000);
-//                 done();
-//             },
-//             async enter(data) {
-//                 mainAnimation();
-//             },
-//             async once(data) {
-//                 mainAnimation();
-//             }
+//         async leave(data) {
+//             const done = this.async();
+//             pageTransition();
+//             await delay(1000);
+//             done();
+//         },
+//         async enter(data) {
+//             mainAnimation();
+//         },
+//         async once(data) {
+//             mainAnimation();
 //         }
-//     ],
+//     }],
 // });
+
+// despues de transicion
+barba.hooks.afterLeave((data) => {
+    let triggers = ScrollTrigger.getAll();
+    triggers.forEach( trigger => { 
+        trigger.kill();
+    });
+});
+// restablecer despues de transicion
+barba.hooks.enter((data) => {
+window.scrollTo(0, 0);
+ScrollTrigger.refresh(true);
+});
+// reiniciar funciones despues de transicion
+barba.hooks.afterEnter((data) => {
+// console.log(data.next.namespace);
+// var x = data.next.namespace;
+reInitialized();
+});
