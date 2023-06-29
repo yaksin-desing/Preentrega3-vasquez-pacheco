@@ -20,6 +20,8 @@
             .palabra1 {
                 display: inline-block;
                 position: relative;
+                font-weight: 700;
+                font-size: 58px;
                 &::after {
                     content: '';
                     position: absolute;
@@ -1450,6 +1452,7 @@
             .palabra1 {
                 display: inline-block;
                 position: relative;
+                font-size: 35px;
                 &::after {
                     content: '';
                     position: absolute;

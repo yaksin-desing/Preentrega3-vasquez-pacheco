@@ -91,19 +91,19 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   position: relative;
   z-index: 100;
+  transform: scale(0.8);
 }
 
 .cont__logo__menu {
   display: flex;
   justify-content: start;
   width: 100%;
-  border-bottom: 1px solid #838383;
 }
 .cont__logo__menu .logo__menu {
   align-items: end;
   padding-left: 5em;
+  padding-top: 2em;
   padding-bottom: 10px;
-  filter: invert(100%);
   transform: scale(0.8);
 }
 
@@ -115,11 +115,11 @@ body::-webkit-scrollbar-thumb {
 
 .cont-menu {
   z-index: 99;
-  background: rgba(0, 0, 0, 0.575);
+  background: rgba(230, 230, 230, 0.575);
   -webkit-backdrop-filter: blur(14.5px);
           backdrop-filter: blur(14.5px);
   box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
-  width: 100vw;
+  width: 60vw;
   height: 100%;
   position: fixed;
   top: 0;
@@ -136,6 +136,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cont-menu ul {
+  display: flex;
+  flex-direction: row;
   padding: 2em 0px 20px 0px;
   list-style: none;
 }
@@ -143,40 +145,53 @@ body::-webkit-scrollbar-thumb {
 .cont-menu ul li a {
   justify-content: end;
   align-items: end;
-  color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
   display: block;
   text-decoration: none;
   padding: 10px 5em;
   cursor: pointer;
   font-family: "Sora";
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 20px;
   line-height: 136%;
-  color: #ffffff;
+  color: #020202;
 }
 
 .cont-menu ul p {
   justify-content: start;
   align-items: start;
-  color: rgb(255, 255, 255);
+  color: rgb(124, 124, 124);
   display: block;
   font-size: 60px;
   text-decoration: none;
-  padding: 10px 4em;
+  padding: 10px 6em;
   font-family: "Sora";
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 136%;
-  border-bottom: 1px solid #838383;
+}
+
+.cont-menu p {
+  justify-content: start;
+  align-items: start;
+  color: rgb(124, 124, 124);
+  display: block;
+  font-size: 60px;
+  text-decoration: none;
+  padding: 10px 6em;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 136%;
 }
 
 .cont-menu ul li a:hover {
-  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-size: 38px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .redes__menu {
@@ -185,6 +200,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   gap: 20px;
   padding: 10px 6em;
+  filter: invert(100%);
 }
 
 .redes__menu a img:hover {
@@ -1219,18 +1235,16 @@ p {
     display: flex;
     justify-content: start;
     width: 100%;
-    border-bottom: 1px solid #838383;
   }
   .cont__logo__menu .logo__menu {
     align-items: end;
     padding-left: 1em;
     padding-bottom: 10px;
-    filter: invert(100%);
     transform: scale(0.8);
   }
   .cont-menu {
     z-index: 99;
-    background: rgba(0, 0, 0, 0.575);
+    background: rgba(230, 230, 230, 0.575);
     -webkit-backdrop-filter: blur(14.5px);
             backdrop-filter: blur(14.5px);
     box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
@@ -1255,7 +1269,7 @@ p {
   .cont-menu ul li a {
     justify-content: end;
     align-items: end;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
     text-decoration: none;
     padding: 10px 1.5em;
@@ -1265,22 +1279,35 @@ p {
     font-weight: 100;
     font-size: 20px;
     line-height: 136%;
-    color: #ffffff;
+    color: #000000;
   }
   .cont-menu ul p {
     justify-content: start;
     align-items: start;
-    color: rgb(255, 255, 255);
+    color: rgb(124, 124, 124);
     display: block;
     font-size: 60px;
     text-decoration: none;
-    padding: 10px 1em;
+    padding: 10px 2em;
     font-family: "Sora";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 136%;
-    border-bottom: 1px solid #838383;
+  }
+  .cont-menu p {
+    justify-content: start;
+    align-items: start;
+    color: rgb(124, 124, 124);
+    display: block;
+    font-size: 60px;
+    text-decoration: none;
+    padding: 10px 2em;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 136%;
   }
   .redes__menu {
     margin-top: 1em;
@@ -2467,6 +2494,8 @@ p {
 .home__inicio .home__inicio__conten1 .inicio__titulo .palabra1 {
   display: inline-block;
   position: relative;
+  font-weight: 700;
+  font-size: 58px;
 }
 .home__inicio .home__inicio__conten1 .inicio__titulo .palabra1::after {
   content: "";
@@ -3830,6 +3859,7 @@ p {
   .home__inicio .home__inicio__conten1 .inicio__titulo .palabra1 {
     display: inline-block;
     position: relative;
+    font-size: 35px;
   }
   .home__inicio .home__inicio__conten1 .inicio__titulo .palabra1::after {
     content: "";

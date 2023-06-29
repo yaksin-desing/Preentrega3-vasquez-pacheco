@@ -878,20 +878,20 @@
         display: flex;
         justify-content: start;
         width: 100%;
-        border-bottom: 1px solid #838383;
+        
     
         .logo__menu {
             align-items: end;
             padding-left: 1em;
             padding-bottom: 10px;
-            filter: invert(100%);
+
             transform: scale(0.8);
         }
     
     }
     .cont-menu {
         z-index: 99;
-        background: rgba(0, 0, 0, 0.575);
+        background: rgba(230, 230, 230, 0.575);
         backdrop-filter: blur(14.5px);
         box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
         width: 100vw;
@@ -908,6 +908,7 @@
         visibility: hidden;
         position: fixed;
         background: #ffffff;
+        
     }
     
     .cont-menu {
@@ -916,7 +917,7 @@
         ul li a {
             justify-content: end;
             align-items: end;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             display: block;
             text-decoration: none;
             padding: 10px  1.5em;
@@ -926,22 +927,37 @@
             font-weight: 100;
             font-size: 20px;
             line-height: 136%;
-            color: #ffffff;
+            color: #000000;
         }
         ul p {
             justify-content: start;
             align-items: start;
-            color: rgb(255, 255, 255);
+            color: rgb(124, 124, 124);
             display: block;
             font-size: 60px;
             text-decoration: none;
-            padding: 10px 1em;
+            padding: 10px 2em;
             font-family: 'Sora';
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 136%;
-            border-bottom: 1px solid #838383;
+            
+        }
+        p {
+            justify-content: start;
+            align-items: start;
+            color: rgb(124, 124, 124);
+            display: block;
+            font-size: 60px;
+            text-decoration: none;
+            padding: 10px 2em;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 136%;
+            
         }
     }
     
